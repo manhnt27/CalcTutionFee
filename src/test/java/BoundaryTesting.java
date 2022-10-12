@@ -99,7 +99,7 @@ public class BoundaryTesting {
         assertEquals("Total tution fee: 5400000", result);
     }
     @Test
-    public void test8() {
+    public void test7() {
         List<Course> courses = new LinkedList<>();
         courses.add(new Course("INT_1000", 4, false));
         courses.add(new Course("INT_1001", 2, false));
@@ -114,7 +114,7 @@ public class BoundaryTesting {
     }
 
     @Test
-    public void test9() {
+    public void test8() {
         List<Course> courses = new LinkedList<>();
         courses.add(new Course("INT_100", 4, false));
         courses.add(new Course("INT_101", 2, false));
@@ -129,7 +129,7 @@ public class BoundaryTesting {
     }
 
     @Test
-    public void test10() {
+    public void test9() {
         List<Course> courses = new LinkedList<>();
         courses.add(new Course("INT_1", 4, true));
         courses.add(new Course("INT_2", 2, true));
@@ -144,7 +144,7 @@ public class BoundaryTesting {
     }
 
     @Test
-    public void test11() {
+    public void test10() {
         List<Course> courses = new LinkedList<>();
         courses.add(new Course("INT_10", 4, true));
         courses.add(new Course("INT_11", 2, true));
@@ -159,7 +159,7 @@ public class BoundaryTesting {
     }
 
     @Test
-    public void test12() {
+    public void test11() {
         List<Course> courses = new LinkedList<>();
         courses.add(new Course("INT_100", 4, true));
         courses.add(new Course("INT_101", 2, true));
