@@ -1,8 +1,6 @@
 package org.example;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,6 +13,7 @@ public class Main {
         final int MAX_CREDIT = 40;
         int totalCredits = 0;
         int tutionFee = 0;
+        Set<String> courseCodeSet = new HashSet<>();
 
         for(int i = 0; i < numCourses; i++) {
             String courseCode = input.next();
@@ -22,6 +21,7 @@ public class Main {
             boolean studyAgain = input.nextBoolean();
             totalCredits += numCredit;
             courses.add(new Course(courseCode, numCredit, studyAgain));
+
         }
 
         if (totalCredits > MAX_CREDIT) {
