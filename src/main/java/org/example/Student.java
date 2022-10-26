@@ -8,7 +8,6 @@ public class Student {
         int tutionFee = 0;
         Set<String> courseCodeSet = new HashSet<>();
         for(Course course : courses) {
-            totalCredits += course.getNumCredit();
             if (course.getCourseCode().length() > 8 ||
                     course.getCourseCode().length() < 5) {
                 return "Len of course code must be between 5 and 8";
@@ -18,6 +17,7 @@ public class Student {
             } else {
                 return "Course code can not be duplicated";
             }
+            totalCredits += course.getNumCredit();
         }
         if (totalCredits > Constant.MAX_CREDIT) {
             return "Num of credits must not be greater than 40";
